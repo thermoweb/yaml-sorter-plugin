@@ -33,6 +33,9 @@ public class YamlSorter extends AnAction {
 	public YamlSorter() {
 		options = new DumperOptions();
 		options.setDefaultFlowStyle(DumperOptions.FlowStyle.BLOCK);
+		options.setIndent(2);
+		options.setIndicatorIndent(2);
+		options.setIndentWithIndicator(true);
 	}
 
 	@Override
