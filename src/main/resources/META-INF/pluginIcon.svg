@@ -1,11 +1,60 @@
-<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M32.0845 7.94025V4H24.0203V7.9896H16.029V4H7.91553V7.94025H4V36H16.0044V32.0045C16.0058 30.9457 16.4274 29.9308 17.1766 29.1826C17.9258 28.4345 18.9412 28.0143 20 28.0143C21.0588 28.0143 22.0743 28.4345 22.8234 29.1826C23.5726 29.9308 23.9942 30.9457 23.9956 32.0045V36H36V7.94025H32.0845Z"
-          fill="url(#paint0_linear)"/>
-    <defs>
-        <linearGradient id="paint0_linear" x1="2.94192" y1="4.89955" x2="37.7772" y2="39.7345" gradientUnits="userSpaceOnUse">
-            <stop offset="0.15937" stop-color="#3BEA62"/>
-            <stop offset="0.5404" stop-color="#3C99CC"/>
-            <stop offset="0.93739" stop-color="#6B57FF"/>
-        </linearGradient>
-    </defs>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="28.944139"
+   height="28.311148"
+   viewBox="0 0 28.944139 28.311148"
+   version="1.1"
+   id="svg5"
+   inkscape:export-filename="ys.svg"
+   inkscape:export-xdpi="135.63562"
+   inkscape:export-ydpi="135.63562"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     showgrid="false"
+     showguides="false">
+    <sodipodi:guide
+       position="4.1551046,25.978839"
+       orientation="0,-1"
+       id="guide9"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-1.7122054,-1.7593684)">
+    <rect
+       style="fill:#0f1a56;stroke-width:2.00608"
+       id="rect167"
+       width="30"
+       height="30"
+       x="1.7122054"
+       y="1.7593684" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.5px;white-space:pre;inline-size:8.07185;fill:#ffffff"
+       x="8.9254103"
+       y="13.210699"
+       id="text553"
+       transform="matrix(4.5939497,0,0,6.2920958,-37.892608,-55.264255)"><tspan
+         x="8.9254103"
+         y="13.010699"
+         id="tspan833">YS</tspan></text>
+  </g>
 </svg>

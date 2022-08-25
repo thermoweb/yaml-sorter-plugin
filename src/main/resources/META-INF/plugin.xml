@@ -5,7 +5,7 @@
     <description>Adds an editor popup menu on Yaml files to sort properties. It keeps all comments that are on the top of the file. Others will be removed.</description>
     <vendor>thermoweb</vendor>
 
-    <version>1.0.1</version>
+    <version>1.0.2</version>
 
     <depends>com.intellij.modules.platform</depends>
 
