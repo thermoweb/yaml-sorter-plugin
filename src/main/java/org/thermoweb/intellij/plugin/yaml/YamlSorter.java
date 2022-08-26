@@ -110,7 +110,9 @@ public class YamlSorter extends AnAction {
 	@Override
 	public void update(@NotNull final AnActionEvent anActionEvent) {
 		Boolean isYamlFile = Optional.ofNullable(anActionEvent.getData(CommonDataKeys.PSI_FILE)).map(PsiFile::getFileType)
-				.map(FileType::getDefaultExtension).map(YamlFile::isYamlFile).orElse(false);
+				.map(FileType::getDefaultExtension)
+				.map(YamlFile::isYamlFile)
+				.orElse(false);
 
 		anActionEvent.getPresentation().setEnabledAndVisible(anActionEvent.getProject() != null && isYamlFile);
 	}

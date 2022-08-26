@@ -3,6 +3,8 @@
 # Yaml Sorter Plugin Changelog
 
 ## [Unreleased]
+### Added
+- New Icon for popup action
 
 ## [1.0.3]
 ### Changed

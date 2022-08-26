@@ -10,7 +10,10 @@
     <depends>com.intellij.modules.platform</depends>
 
     <actions>
-        <action id="org.thermoweb.intellij.plugin.yaml.YamlSorter" class="org.thermoweb.intellij.plugin.yaml.YamlSorter" text="Sort Yaml"
+        <action id="org.thermoweb.intellij.plugin.yaml.YamlSorter"
+                class="org.thermoweb.intellij.plugin.yaml.YamlSorter"
+                text="Sort Yaml"
+                icon="AllIcons.ObjectBrowser.Sorted"
                 description="Sort yaml file">
             <add-to-group group-id="EditorPopupMenu" anchor="first"/>
         </action>
