@@ -1,7 +1,18 @@
 <!-- Keep a Changelog guide -> https://keepachangelog.com -->
 
-# yaml-sorter-plugin Changelog
+# Yaml Sorter Plugin Changelog
 
 ## [Unreleased]
+
+## [1.0.4]
 ### Added
-- Initial scaffold created from [IntelliJ Platform Plugin Template](https://github.com/JetBrains/intellij-platform-plugin-template)
+- New Icon for popup action
+- Sort Selection action (experimental)
+
+## [1.0.3]
+### Changed
+- Add plugin icon
+
+## [1.0.2]
+### Changed
+- Keep the indentation correctly with lists

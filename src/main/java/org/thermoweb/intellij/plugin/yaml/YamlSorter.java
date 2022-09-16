@@ -52,7 +52,7 @@ public class YamlSorter extends AnAction {
 
 			List<String> headerComments = retrieveHeaderComments(text);
 			Map<String, Object> yamlMap = yaml.load(text);
-			Map<String, Object> sortedMap = sortMapByKey(yamlMap);
+			Map<String, Object> sortedMap = YamlUtils.sortMapByKey(yamlMap);
 
 			String dump = yaml.dump(sortedMap);
 			WriteCommandAction.runWriteCommandAction(project, () -> document.setText(dump));
@@ -61,36 +61,6 @@ public class YamlSorter extends AnAction {
 				WriteCommandAction.runWriteCommandAction(project, () -> document.insertString(0, comment + LINE_SEPARATOR));
 			}
 		}
-	}
-
-	private static Map<String, Object> sortMapByKey(final Map<String, Object> map) {
-		Map<String, Object> sortedMap = new TreeMap<>();
-		TreeSet<String> keys = new TreeSet<>(map.keySet());
-		for (String key : keys) {
-			Object value = map.get(key);
-			if (value instanceof Map) {
-				sortedMap.put(key, sortMapByKey((Map<String, Object>) value));
-			} else if (value instanceof ArrayList) {
-				sortedMap.put(key, sortListItems((ArrayList<?>) value));
-			} else {
-				sortedMap.put(key, value);
-			}
-		}
-
-		return sortedMap;
-	}
-
-	@NotNull
-	private static List<?> sortListItems(final ArrayList<?> value) {
-		List<Map<String, Object>> sortedvalueList = new ArrayList<>();
-		for (Object listValue : value) {
-			if (listValue instanceof Map) {
-				sortedvalueList.add(sortMapByKey((Map<String, Object>) listValue));
-			} else {
-				return value;
-			}
-		}
-		return sortedvalueList;
 	}
 
 	private static List<String> retrieveHeaderComments(final String text) {

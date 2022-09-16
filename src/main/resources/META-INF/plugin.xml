@@ -5,7 +5,7 @@
     <description>Adds an editor popup menu on Yaml files to sort properties. It keeps all comments that are on the top of the file. Others will be removed.</description>
     <vendor>thermoweb</vendor>
 
-    <version>1.0.2</version>
+    <version>1.0.4</version>
 
     <depends>com.intellij.modules.platform</depends>
 
@@ -13,6 +13,13 @@
         <action id="org.thermoweb.intellij.plugin.yaml.YamlSorter"
                 class="org.thermoweb.intellij.plugin.yaml.YamlSorter"
                 text="Sort Yaml"
+                icon="AllIcons.ObjectBrowser.Sorted"
+                description="Sort yaml file">
+            <add-to-group group-id="EditorPopupMenu" anchor="first"/>
+        </action>
+        <action id="org.thermoweb.intellij.plugin.yaml.YamlSelectionSorter"
+                class="org.thermoweb.intellij.plugin.yaml.YamlSelectionSorter"
+                text="Sort Yaml Selection (Experimental)"
                 icon="AllIcons.ObjectBrowser.Sorted"
                 description="Sort yaml file">
             <add-to-group group-id="EditorPopupMenu" anchor="first"/>
